@@ -1,0 +1,41 @@
+h1 {
+
+    font-size: 68px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+li { 
+    font-size: 30px;
+    padding: 10px;
+}
+
+p{ 
+    font-size: 25px;
+    margin: 30px;
+}
+
+img {
+    margin: 20px;
+    height: 200px;
+    width: 300px;
+
+}
+
+
+
+
+
+td {
+    border: 1px solid blue;
+}
+
+article {
+    text-align: center;
+    float: left;
+} 
+article:first-child {
+    margin-left: 120px;
+}
