@@ -102,11 +102,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+    var fourthMultiply = multiply(multiply(testArray[0], testArray[1])[0], testArray[2])[0];
+    return [
+        fourthMultiply,
+        'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of 24.'
+    ];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
@@ -129,11 +133,26 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
-function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-
+function multiplyAnyArray(dynamicArray) {
+    var product = 1;
+    for(var i = 0; i < dynamicArray.length; i++){
+        product *= dynamicArray[i];
+    }
+    var message = 'The numbers ';
+    for(var j = 0; j < dynamicArray.length; j++){
+        message += dynamicArray[i]
+    }
+    if(j < dynamicArray.length -1){
+        message += ',';
+    } 
+    message += ' have a product ' + product + '.';
+    return [product, message];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyAnyArray(testDynamicArray);
+testMultiplyAnyArray(testDynamicArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
+
+var testDynamicArray = [1,2,3,4,5]; 
+
